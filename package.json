@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "watch": "watch \"npm run build\" .",
-    "start": "live-server public"
+    "watch": "watch \"npm run build\" css",
+    "start": "live-server --wait=2000 public"
   },
   "repository": {
     "type": "git",
