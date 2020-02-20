@@ -4,8 +4,9 @@
     </head>
 
     <body class="
-            m-10 
-            text-xl
+            m-10
+            text-sm
+            text-gray-500
             bg-gray-custom">
         <div
             class="
@@ -13,17 +14,74 @@
                 p-6
                 rounded-lg
                 box-shadow-up">
-            <input 
-                class="
-                    focus:outline-none
-                    rounded-lg
-                    p-3
-                    w-full
-                    placeholder-blue-400
-                    bg-gray-custom 
-                    box-shadow-down"
-                type="email" 
-                placeholder="jane@example.com">
+            <h3 class="
+                text-lg 
+                my-3
+                font-extrabold">
+                    Registration Details
+            </h3>
+            <form>
+                <fieldset
+                    class="
+                        mb-5">
+                    <legend>Full Name</legend>
+                    <input 
+                        class="
+                            focus:outline-none
+                            rounded-lg
+                            px-3
+                            py-1
+                            w-full
+                            placeholder-gray-500
+                            bg-gray-custom 
+                            box-shadow-down"
+                        type="text">
+                </fieldset>
+                
+                <fieldset
+                    class="
+                        mb-5">
+                    <legend>Email</legend>
+                    <input 
+                        class="
+                            focus:outline-none
+                            rounded-lg
+                            px-3
+                            py-1
+                            w-full
+                            placeholder-gray-500
+                            bg-gray-custom 
+                            box-shadow-down"
+                        type="email">
+                </fieldset>
+                
+                <fieldset
+                    class="
+                        mb-5">
+                    <button
+                        class="
+                            bg-gray-custom
+                            box-shadow-up
+                            focus:outline-none
+                            mr-3
+                            font-extrabold
+                            py-2
+                            px-4
+                            rounded-lg" 
+                        type="reset">Cancel</button>
+                    <button 
+                        class="
+                            bg-gray-custom
+                            box-shadow-up
+                            focus:outline-none
+                            mr-3
+                            font-extrabold
+                            py-2
+                            px-4
+                            rounded-lg" 
+                        type="submit">Submit</button>
+                </fieldset>
+            </form>
         </div>
     </body>
 </html>
