@@ -1,0 +1,22 @@
+{
+  "name": "neuomorphic-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "live-server --no-browser ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wr1472/neuomorphic-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wr1472/neuomorphic-ui/issues"
+  },
+  "homepage": "https://github.com/wr1472/neuomorphic-ui#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
