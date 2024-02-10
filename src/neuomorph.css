@@ -1,5 +1,11 @@
 @font-face {
     font-family: orbitron;
+    src: url(./fonts/orbitron/static/Orbitron-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: orbitron;
     src: url(./fonts/orbitron/static/Orbitron-Medium.ttf);
 }
 
@@ -21,8 +27,8 @@
 }
 
 :root {
-    --primary: #06066c;
-    --black: #5b5a5a;
+    --primary: #0e6e91;
+    --black: #244c5f;
     --white: #fff;
     --background: #fafafa;
 }
@@ -44,11 +50,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 fieldset {
-    border: var(--black);
+    border: none;
     border-radius: 16px;
     background: var(--background);
-    box-shadow: 4px 4px 4px 0px #e2e2e2, 
-        -4px -4px 0px 0px var(--white);
+    box-shadow: 2px 2px 2px 2px #e2e2e2, 
+        -4px -4px 2px 2px var(--white);
 }
 
 legend {
@@ -56,4 +62,21 @@ legend {
     text-transform: uppercase;
     color: var(--primary);
     letter-spacing: 0.05rem;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    background: var(--background);
+    box-shadow: 2px 2px 0px 0px var(--white), 
+        -2px -2px 0px 0px #e2e2e2;
+    margin: 4px;
+    padding: 4px;
+    font-family: "orbitron";
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+input:focus-visible {
+    border: #02e40a;
 }
