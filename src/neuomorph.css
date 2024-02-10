@@ -1,0 +1,30 @@
+@font-face {
+    font-family: bakbak;
+    src: url(./fonts/bakbak-one/BakbakOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: titillium;
+    src: url(./fonts/titillium/TitilliumWeb-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: titillium;
+    src: url(./fonts/titillium/TitilliumWeb-SemiBold.ttf);
+    font-weight: 700;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 8px;
+    color: #5b5a5a;
+    font-family: "titillium";
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "bakbak";
+    color: #474747;
+    font-weight: 400;
+    ;;
+}
