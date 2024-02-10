@@ -1,6 +1,12 @@
 @font-face {
-    font-family: bakbak;
-    src: url(./fonts/bakbak-one/BakbakOne-Regular.ttf);
+    font-family: orbitron;
+    src: url(./fonts/orbitron/static/Orbitron-Medium.ttf);
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url(./fonts/orbitron/static/Orbitron-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
@@ -14,17 +20,40 @@
     font-weight: 700;
 }
 
+:root {
+    --primary: #06066c;
+    --black: #5b5a5a;
+    --white: #fff;
+    --background: #fafafa;
+}
+
 body {
-    background-color: #fafafa;
+    background-color: var(--background);
     margin: 8px;
-    color: #5b5a5a;
+    color: var(--black);
     font-family: "titillium";
     line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "bakbak";
-    color: #474747;
-    font-weight: 400;
-    ;;
+    font-family: "orbitron";
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 0.05rem;
+    line-height: 2.10rem;
+}
+
+fieldset {
+    border: var(--black);
+    border-radius: 16px;
+    background: var(--background);
+    box-shadow: 4px 4px 4px 0px #e2e2e2, 
+        -4px -4px 0px 0px var(--white);
+}
+
+legend {
+    font-family: orbitron;
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 0.05rem;
 }
