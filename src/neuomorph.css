@@ -1,21 +1,4 @@
 @font-face {
-    font-family: orbitron;
-    src: url(./fonts/orbitron/static/Orbitron-Regular.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: orbitron;
-    src: url(./fonts/orbitron/static/Orbitron-Medium.ttf);
-}
-
-@font-face {
-    font-family: orbitron;
-    src: url(./fonts/orbitron/static/Orbitron-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
     font-family: titillium;
     src: url(./fonts/titillium/TitilliumWeb-ExtraLight.ttf);
 }
@@ -27,25 +10,27 @@
 }
 
 :root {
-    --primary: #0e6e91;
-    --black: #244c5f;
-    --white: #fff;
-    --background: #fafafa;
+    --primary: #656565;
+    --black: #9c9f9f;
+    --white: #fbfafd;
+    --background: #ebebeb;
+    --shadow: #d1d1d1;
 }
 
 body {
     background-color: var(--background);
     margin: 8px;
     color: var(--black);
-    font-family: "titillium";
+    font-family: helvetica, sans-serif;
     line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "orbitron";
-    text-transform: uppercase;
+    font-family: titillium, sans-serif;
+    font-weight: 700;
+    /* text-transform: uppercase; */
     color: var(--primary);
-    letter-spacing: 0.05rem;
+    /* letter-spacing: 0.05rem; */
     line-height: 2.10rem;
 }
 
@@ -53,30 +38,37 @@ fieldset {
     border: none;
     border-radius: 16px;
     background: var(--background);
-    box-shadow: 2px 2px 2px 2px #e2e2e2, 
-        -4px -4px 2px 2px var(--white);
+    box-shadow: 2px 2px 2px 2px var(--shadow), 
+        -2px -2px 2px 2px var(--white);
 }
 
 legend {
-    font-family: orbitron;
+    /* font-family: orbitron; */
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--primary);
+    padding-top: 16px;
     letter-spacing: 0.05rem;
 }
 
-input {
+input, textarea, button {
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    color: var(--black);
     background: var(--background);
     box-shadow: 2px 2px 0px 0px var(--white), 
-        -2px -2px 0px 0px #e2e2e2;
-    margin: 4px;
-    padding: 4px;
-    font-family: "orbitron";
-    font-weight: 300;
-    font-size: 0.85rem;
+        -2px -2px 0px 0px var(--shadow);
+    margin: 8px;
+    padding: 8px;
 }
 
-input:focus-visible {
-    border: #02e40a;
+button,
+input[type=button], 
+input[type=reset], 
+input[type=submit],
+input[type=file],
+input[type=range],
+input[type=color]{
+    box-shadow: 2px 2px 0px 0px var(--shadow), 
+        -2px -2px 0px 0px var(--white);
 }
