@@ -13,13 +13,13 @@
     --primary: #656565;
     --black: #9c9f9f;
     --white: #fbfafd;
-    --background: #ebebeb;
+    --background: #e2e4e8;
     --shadow: #d1d1d1;
 }
 
 body {
     background-color: var(--background);
-    margin: 8px;
+    margin: 16px;
     color: var(--black);
     font-family: helvetica, sans-serif;
     line-height: 1.5rem;
@@ -47,11 +47,14 @@ legend {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary);
-    padding-top: 16px;
+    padding-top: 32px;
     letter-spacing: 0.05rem;
 }
 
-input, textarea, button {
+input, 
+textarea, 
+button,
+select{
     border: none;
     border-radius: 8px;
     color: var(--black);
@@ -63,12 +66,26 @@ input, textarea, button {
 }
 
 button,
-input[type=button], 
-input[type=reset], 
-input[type=submit],
-input[type=file],
-input[type=range],
-input[type=color]{
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"],
+input[type="file"],
+input[type="range"],
+input[type="color"] {
     box-shadow: 2px 2px 0px 0px var(--shadow), 
         -2px -2px 0px 0px var(--white);
+    padding: 8px 16px;
+}
+
+button:disabled,
+input[type="button"]:disabled, 
+input[type="reset"]:disabled, 
+input[type="submit"]:disabled,
+input[type="file"]:disabled,
+input[type="range"]:disabled,
+input[type="color"]:disabled 
+{
+    box-shadow: none;
+    border: 2px solid var(--shadow);
+    color: var(--shadow)
 }
